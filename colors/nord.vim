@@ -250,7 +250,7 @@ call s:hi("Float", s:nord15_gui, "", s:nord15_term, "", "", "")
 call s:hi("Function", s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("Identifier", s:nord4_gui, "", "NONE", "", "NONE", "")
 call s:hi("Include", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("Keyword", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("Keyword", s:nord9_gui, "", s:nord9_term, "", "bold", "")
 call s:hi("Label", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Number", s:nord15_gui, "", s:nord15_term, "", "", "")
 call s:hi("Operator", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
@@ -543,6 +543,17 @@ hi! link jsThis Keyword
 hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
 hi! link jsRegexpString SpecialChar
+
+" Typescript
+hi! link typescriptExport Keyword
+hi! link typescriptDecorator Keyword
+hi! link typescriptImport Keyword
+hi! link typescriptExport Keyword
+hi! link typescriptVariable Keyword
+hi! link typescriptOperator Operator
+
+call s:hi("typescriptFuncCallArg", s:nord13_gui, "", s:nord13_term, "", "", "")
+
 
 " Markdown
 " > plasticboy/vim-markdown
