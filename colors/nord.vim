@@ -238,7 +238,7 @@ call s:hi("VertSplit", s:nord2_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "NO
 "+----------------------+
 "+ Language Base Groups +
 "+----------------------+
-call s:hi("Boolean", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("Boolean", s:nord10_gui, "", s:nord10_term, "", s:italic, "")
 call s:hi("Character", s:nord14_gui, "", s:nord14_term, "", "", "")
 call s:hi("Comment", s:nord3_gui_brightened[g:nord_comment_brightness], "", s:nord3_term, "", s:italicize_comments, "")
 call s:hi("Conditional", s:nord9_gui, "", s:nord9_term, "", "", "")
@@ -546,13 +546,21 @@ hi! link jsRegexpString SpecialChar
 
 " Typescript
 hi! link typescriptExport Keyword
-hi! link typescriptDecorator Keyword
+hi! link typescriptDecorator Function
 hi! link typescriptImport Keyword
 hi! link typescriptExport Keyword
 hi! link typescriptVariable Keyword
 hi! link typescriptOperator Operator
 
+hi! link typescriptMember String
+hi! link typescriptMember String
+hi! link typescriptLabel String
+
+hi! link typescriptTypeReference Number
+hi! link typescriptInterfaceName Number
+
 call s:hi("typescriptFuncCallArg", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("embeddedTs", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
 
 
 " Markdown
@@ -601,3 +609,5 @@ hi! link VimwikiList markdownListMarker
 " YAML
 " > stephpy/vim-yaml
 call s:hi("yamlKey", s:nord7_gui, "", s:nord7_term, "", "", "")
+
+
