@@ -558,6 +558,8 @@ hi! link typescriptLabel String
 
 hi! link typescriptTypeReference Number
 hi! link typescriptInterfaceName Number
+hi! link typescriptPredefinedType Number
+hi! link typescriptClassHeritage Number
 
 call s:hi("typescriptFuncCallArg", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("embeddedTs", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
